@@ -1,0 +1,24 @@
+{
+  "name": "aml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf build && tsc",
+    "dev": "cp -r src/assets build/ && tsc-watch --onSuccess \"node ./build/index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/lodash": "^4.14.159",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "lodash": "^4.17.19",
+    "xml-js": "^1.6.11"
+  }
+}
