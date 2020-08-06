@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf build && tsc",
-    "dev": "cp -r src/assets build/ && tsc-watch --onSuccess \"node ./build/index.js\""
+    "dev": "cp -r src/assets build/ && tsc-watch --onSuccess \"node ./build/index.js\"",
+    "start": "cp -r src/assets build/ && node build/index.js"
   },
   "author": "",
   "license": "ISC",
